@@ -1,0 +1,86 @@
+.project-wrapper{
+  position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: white;
+  /* transition: background-color 0.5s ease, color 0.5s ease; */
+  
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-wrapper {
+  min-height: 100vh;
+  padding: 80px 60px;
+}
+
+/* 🔥 header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* 🔥 grid layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* 🔥 THIS FIXES YOUR HEIGHT ISSUE */
+.project-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 🔥 IMPORTANT */
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #111;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+.project-card:hover {
+  transform: scale(1.03) translateY(-5px);
+  transition: 0.4s ease;
+}
+
+/* image fix */
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* 🔥 center horizontally */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.8);
+  color: #000;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+/* hover */
+.project-card:hover img {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
