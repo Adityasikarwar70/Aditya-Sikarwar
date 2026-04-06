@@ -2,10 +2,6 @@ import React, { useEffect, useRef } from "react";
 import "./Project.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import portofolio from "../../assets/portfolio.png"
-import realstate from "../../assets/realstate.png"
-import Home from "../../assets/home.jpeg"
-import apple from "../../assets/apple.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,23 +66,23 @@ useEffect(() => {
   <div className="project-grid">
 
   <div className="project-card">
-    <img src={Home} alt="" />
+    <img src="/images/home.jpeg" alt="" />
     <a href="https://github.com/Adityasikarwar70/Secure-Bidding-Platform" target="blank" className="overlay">BIDx</a>
   </div>
 
   <div className="project-card">
-    <img src={apple} alt="" />
+    <img src="/images/apple.png" alt="" />
     <a href="https://github.com/Adityasikarwar70/Apple_Website" target="blank" className="overlay">Apple</a>
 
   </div>
 
   <div className="project-card">
-    <img src={portofolio} alt="" />
+    <img src="/images/portfolio.png" alt="" />
     <a href="https://github.com/Adityasikarwar70/Portfolio" target="blank" className="overlay">Portfolio</a>
   </div>
 
   <div className="project-card">
-    <img src={realstate} alt="" />
+    <img src="/images/realstate.png" alt="" />
     <a href="https://github.com/Adityasikarwar70/RealState_Project" target="blank"  className="overlay">Realstate</a>
   </div>
 
