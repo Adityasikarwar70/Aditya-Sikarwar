@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import "./SocialLinks.css"
 import gsap from "gsap"
 
-import linkedin from "../../assets/linkedin.png"
-import github from "../../assets/github.svg"
-import email from "../../assets/email.png"
-import resume from "../../assets/resume.png"
+// import linkedin from "./images/linkedin.png"
+// import github from "./images/github.svg"
+// import email from "./images/email.png"
+// import resume from "./images/resume.png"
 
 const SocialLinks = () => {
   const linksRef = useRef(null);
@@ -39,19 +39,19 @@ const SocialLinks = () => {
     <div ref={linksRef} className='links'>
 
       <a href="https://linkedin.com/in/adityasikarwar1" target="_blank" rel="noreferrer">
-        <img src={linkedin} alt="LinkedIn" />
+        <img src="/images/linkedIn.png" alt="LinkedIn" />
       </a>
 
       <a href="https://github.com/AdityaSikarwar70" target="_blank" rel="noreferrer">
-        <img src={github} alt="GitHub" />
+        <img src="/images/github.svg" alt="GitHub" />
       </a>
 
       <a href="mailto:bs151439@gmail.com">
-        <img src={email} alt="Email" />
+        <img src="/images/email.png" alt="Email" />
       </a>
 
       <a href="/resume.pdf" target="_blank" rel="noreferrer">
-        <img src={resume} alt="Resume" />
+        <img src="/images/resume.png" alt="Resume" />
       </a>
 
     </div>
