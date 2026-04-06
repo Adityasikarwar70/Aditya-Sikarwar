@@ -13,7 +13,7 @@ useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: projectRef.current,
-        start: "3000 80%",
+        start: "3100 60%",
         end: "3000 20%",
         scrub: 1,
         // markers: true
